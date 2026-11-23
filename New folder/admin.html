@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel — ANAS Mechanical Design</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="bg-fx" aria-hidden="true">
+  <div class="grid"></div>
+  <div class="blob blob-orange"></div>
+  <div class="blob blob-blue"></div>
+</div>
+
+<!-- ============ LOGIN SCREEN ============ -->
+<div class="login-screen" id="loginScreen">
+  <div class="login-card">
+    <div class="login-mark">AS</div>
+    <h1>Admin Panel</h1>
+    <p class="login-sub">Sign in to manage the ANAS mechanical design portfolio.</p>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="loginUser">Username</label>
+        <input class="form-control" type="text" id="loginUser" autocomplete="username" required>
+      </div>
+      <div class="form-group">
+        <label for="loginPass">Password</label>
+        <input class="form-control" type="password" id="loginPass" autocomplete="current-password" required>
+      </div>
+      <div class="form-msg error" id="loginError"></div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:6px;">Log In</button>
+    </form>
+
+    <div class="login-hint">
+      <span class="k mono">Default test login</span>
+      <code>admin / Admin@123</code>
+      <p>Change this in <b>Security</b> after logging in — before the site goes live.</p>
+    </div>
+    <a href="index.html" class="back-to-site">← Back to the live site</a>
+  </div>
+</div>
+
+<!-- ============ DASHBOARD ============ -->
+<div class="dashboard" id="dashboard">
+
+  <aside class="admin-sidebar">
+    <div class="admin-brand">
+      <span class="mark">AS</span>
+      <span>Admin Panel</span>
+    </div>
+
+    <select class="form-control admin-mobile-nav" id="mobileAdminNav" onchange="document.querySelector('[data-panel=&quot;'+this.value+'&quot;]').click()">
+      <option value="panel-overview">Overview</option>
+      <option value="panel-branding">Branding &amp; Photo</option>
+      <option value="panel-home">Home Page</option>
+      <option value="panel-about">About Page</option>
+      <option value="panel-services">Services</option>
+      <option value="panel-portfolio">Portfolio</option>
+      <option value="panel-awards">Awards &amp; Achievements</option>
+      <option value="panel-contact">Contact &amp; Social</option>
+      <option value="panel-theme">Theme</option>
+      <option value="panel-security">Security</option>
+    </select>
+
+    <nav class="admin-nav">
+      <button class="admin-nav-btn active" data-panel="panel-overview">Overview</button>
+      <button class="admin-nav-btn" data-panel="panel-branding">Branding &amp; Photo</button>
+      <button class="admin-nav-btn" data-panel="panel-home">Home Page</button>
+      <button class="admin-nav-btn" data-panel="panel-about">About Page</button>
+      <button class="admin-nav-btn" data-panel="panel-services">Services</button>
+      <button class="admin-nav-btn" data-panel="panel-portfolio">Portfolio</button>
+      <button class="admin-nav-btn" data-panel="panel-awards">Awards &amp; Achievements</button>
+      <button class="admin-nav-btn" data-panel="panel-contact">Contact &amp; Social</button>
+      <button class="admin-nav-btn" data-panel="panel-theme">Theme</button>
+      <button class="admin-nav-btn" data-panel="panel-security">Security</button>
+    </nav>
+
+    <div class="admin-sidebar-footer">
+      <a href="index.html" target="_blank" class="btn btn-ghost btn-sm" style="width:100%; justify-content:center;">View Live Site ↗</a>
+      <button id="logoutBtn" class="btn btn-ghost btn-sm" style="width:100%; justify-content:center; margin-top:10px;">Log Out</button>
+    </div>
+  </aside>
+
+  <main class="admin-main">
+
+    <!-- OVERVIEW -->
+    <section class="admin-panel-section active" id="panel-overview">
+      <h2>Dashboard Overview</h2>
+      <p class="admin-lead">Everything here saves straight to the live website in this browser — no code, no developer needed.</p>
+
+      <div class="admin-stats-row">
+        <div class="admin-stat-box"><span class="v" id="ov-projects-count">0</span><span class="l">Portfolio Projects</span></div>
+        <div class="admin-stat-box"><span class="v" id="ov-services-count">0</span><span class="l">Services Listed</span></div>
+        <div class="admin-stat-box"><span class="v" id="ov-awards-count">0</span><span class="l">Awards Added</span></div>
+        <div class="admin-stat-box"><span class="v" id="ov-theme">—</span><span class="l">Active Theme</span></div>
+      </div>
+
+      <div class="admin-card" style="margin-top:28px;">
+        <div class="admin-card-head"><strong>Where to find things</strong></div>
+        <ul class="admin-help-list">
+          <li><b>Branding &amp; Photo</b> — your profile photo (used on Home + About) and site tagline.</li>
+          <li><b>Home / About Page</b> — the headline text and stats on those pages.</li>
+          <li><b>Services</b> — add, remove, or reprice any service. Changes appear on both the Home page teaser and the full Services page.</li>
+          <li><b>Portfolio</b> — add, remove, or edit projects and upload real renders. Featured projects also appear on the Home page.</li>
+          <li><b>Awards &amp; Achievements</b> — shown on the About page.</li>
+          <li><b>Contact &amp; Social</b> — your email, WhatsApp, and social links, used across every page footer.</li>
+          <li><b>Theme</b> — instantly recolor the entire live site.</li>
+          <li><b>Security</b> — change your admin username and password.</li>
+        </ul>
+      </div>
+
+      <div class="admin-notice">
+        <strong>Good to know:</strong> this Admin Panel saves changes to this browser's storage. Content will update instantly on the live site when viewed in this same browser. To make edits appear for every visitor on every device, the site would need a real server-based backend — ask any time if you'd like that upgrade built.
+      </div>
+    </section>
+
+    <!-- BRANDING & PHOTO -->
+    <section class="admin-panel-section" id="panel-branding">
+      <h2>Branding &amp; Profile Photo</h2>
+      <p class="admin-lead">This photo is shared between the Home page hero and the About page hero.</p>
+
+      <div class="admin-card">
+        <div class="admin-thumb-row">
+          <img class="admin-thumb-preview" id="brandingPhotoPreview" alt="Profile photo preview" style="width:160px; height:120px;">
+          <div>
+            <input type="file" accept="image/*" id="brandingPhotoInput">
+            <div class="form-note">JPG or PNG recommended. Large images are automatically compressed.</div>
+            <button type="button" class="admin-remove-btn" id="brandingPhotoReset" style="margin-top:10px;">Reset to Placeholder</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-card">
+        <label>Site Tagline<textarea class="form-control" id="brandingTagline" rows="2"></textarea></label>
+        <div class="form-note">Appears under your name on the Home page hero.</div>
+      </div>
+
+      <button class="btn btn-primary" id="brandingSave">Save Branding Changes</button>
+    </section>
+
+    <!-- HOME PAGE -->
+    <section class="admin-panel-section" id="panel-home">
+      <h2>Home Page</h2>
+      <div class="admin-card">
+        <label>Hero Introduction<textarea class="form-control" id="homeHeroIntro" rows="4"></textarea></label>
+      </div>
+      <div class="admin-card">
+        <div class="admin-card-head"><strong>Statistics</strong></div>
+        <div id="homeStatsEditor"></div>
+        <div class="form-note">Label, number, and suffix (e.g. "+" or "%") for each of the four stat cards.</div>
+      </div>
+      <button class="btn btn-primary" id="homeSave">Save Home Page Changes</button>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section class="admin-panel-section" id="panel-about">
+      <h2>About Page</h2>
+      <div class="admin-card">
+        <label>Hero Introduction<textarea class="form-control" id="aboutHeroIntro" rows="4"></textarea></label>
+      </div>
+      <div class="admin-card">
+        <div class="admin-card-head"><strong>My Journey — Story Paragraphs</strong></div>
+        <label>Paragraph 1<textarea class="form-control" id="aboutStory0" rows="3"></textarea></label>
+        <label style="margin-top:14px; display:block;">Paragraph 2<textarea class="form-control" id="aboutStory1" rows="3"></textarea></label>
+        <label style="margin-top:14px; display:block;">Paragraph 3<textarea class="form-control" id="aboutStory2" rows="3"></textarea></label>
+        <label style="margin-top:14px; display:block;">Closing Line<textarea class="form-control" id="aboutClosing" rows="2"></textarea></label>
+      </div>
+      <button class="btn btn-primary" id="aboutSave">Save About Page Changes</button>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="admin-panel-section" id="panel-services">
+      <h2>Services</h2>
+      <p class="admin-lead">These appear on the Home page teaser and the full Services page.</p>
+      <div id="servicesList"></div>
+      <div class="admin-actions-row">
+        <button type="button" class="btn btn-ghost" id="addServiceBtn">+ Add Service</button>
+        <button class="btn btn-primary" id="servicesSave">Save Service Changes</button>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="admin-panel-section" id="panel-portfolio">
+      <h2>Portfolio Projects</h2>
+      <p class="admin-lead">Projects marked "Featured" also appear in the Home page's Featured Projects section.</p>
+      <div id="projectsList"></div>
+      <div class="admin-actions-row">
+        <button type="button" class="btn btn-ghost" id="addProjectBtn">+ Add Project</button>
+        <button class="btn btn-primary" id="projectsSave">Save Portfolio Changes</button>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="admin-panel-section" id="panel-awards">
+      <h2>Awards &amp; Achievements</h2>
+      <p class="admin-lead">Shown on the About page.</p>
+      <div id="awardsList"></div>
+      <div class="admin-actions-row">
+        <button type="button" class="btn btn-ghost" id="addAwardBtn">+ Add Award</button>
+        <button class="btn btn-primary" id="awardsSave">Save Awards Changes</button>
+      </div>
+    </section>
+
+    <!-- CONTACT & SOCIAL -->
+    <section class="admin-panel-section" id="panel-contact">
+      <h2>Contact &amp; Social</h2>
+      <div class="admin-card">
+        <div class="admin-field-grid">
+          <label>Contact Email<input class="form-control" id="contactEmail" type="email"></label>
+          <label>WhatsApp Number<input class="form-control" id="contactWhatsapp" placeholder="e.g. +923267268226"></label>
+          <label>Instagram URL<input class="form-control" id="contactInstagram" placeholder="https://instagram.com/..."></label>
+          <label>YouTube URL<input class="form-control" id="contactYoutube" placeholder="https://youtube.com/..."></label>
+          <label class="full">LinkedIn URL<input class="form-control" id="contactLinkedin" placeholder="https://linkedin.com/in/..."></label>
+        </div>
+        <div class="form-note">Leave WhatsApp blank to keep showing "Available on Request." Leave any social URL blank to keep that icon inactive across the site.</div>
+      </div>
+      <button class="btn btn-primary" id="contactSave">Save Contact Changes</button>
+    </section>
+
+    <!-- THEME -->
+    <section class="admin-panel-section" id="panel-theme">
+      <h2>Color Theme</h2>
+      <p class="admin-lead">Pick a theme to instantly recolor every page of the live site in this browser.</p>
+      <div class="theme-grid" id="themeGrid"></div>
+    </section>
+
+    <!-- SECURITY -->
+    <section class="admin-panel-section" id="panel-security">
+      <h2>Security</h2>
+      <p class="admin-lead">Change your Admin Panel username and password. Do this before the site goes live.</p>
+      <form id="securityForm" class="admin-card">
+        <label>Username<input class="form-control" id="secUsername" required></label>
+        <label style="margin-top:14px; display:block;">Current Password<input class="form-control" type="password" id="secCurrentPass" required></label>
+        <label style="margin-top:14px; display:block;">New Password <span class="form-note" style="display:inline;">(leave blank to keep current password)</span><input class="form-control" type="password" id="secNewPass"></label>
+        <label style="margin-top:14px; display:block;">Confirm New Password<input class="form-control" type="password" id="secConfirmPass"></label>
+        <div class="form-msg" id="secMsg"></div>
+        <button type="submit" class="btn btn-primary" style="margin-top:16px;">Update Login Details</button>
+      </form>
+    </section>
+
+  </main>
+</div>
+
+<div class="admin-toast" id="adminToast"></div>
+
+<script src="js/content.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

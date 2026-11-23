@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — ANAS | SolidWorks Mechanical Designer</title>
+<meta name="description" content="A selection of mechanical designs, SolidWorks models, sheet metal components, assemblies, and manufacturing-ready engineering work by ANAS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ambient background -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="grid"></div>
+  <div class="blob blob-orange"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-orange-2"></div>
+  <div class="particle" style="top:22%;left:14%;animation-delay:0s;"></div>
+  <div class="particle" style="top:64%;left:78%;animation-delay:3s;"></div>
+  <div class="particle" style="top:40%;left:88%;animation-delay:6s;"></div>
+  <div class="particle" style="top:80%;left:30%;animation-delay:2s;"></div>
+  <div class="particle" style="top:10%;left:60%;animation-delay:8s;"></div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-nav" id="siteNav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="mark">AS</span>
+      <span class="full">ANAS<em>MECHANICAL DESIGN</em></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="index.html#contact" class="btn btn-ghost btn-sm">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="index.html#contact" class="btn btn-primary">Hire Me</a>
+</div>
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <div class="corner-frame"><span class="tl"></span><span class="tr"></span></div>
+    <div class="sheet-index mono">SHEET&nbsp;02&nbsp;/&nbsp;PORTFOLIO &nbsp;·&nbsp; REV&nbsp;A</div>
+    <div class="container">
+      <span class="eyebrow orange reveal in">Selected Work</span>
+      <h1 class="reveal in">My Portfolio</h1>
+      <p class="sub reveal in">A selection of mechanical designs, SolidWorks models, sheet metal components, assemblies, and manufacturing-ready engineering work.</p>
+      <p class="desc reveal in">Explore a selection of my mechanical design work, from detailed SolidWorks 3D models and sheet metal components to mechanical assemblies and technical engineering drawings. Each project is developed with attention to accuracy, functionality, and manufacturability.</p>
+    </div>
+  </section>
+
+  <!-- ============ FILTERS + GRID ============ -->
+  <section class="section" id="portfolio-grid" style="padding-top:0;">
+    <div class="container">
+
+      <div class="pf-filters reveal in">
+        <button class="pf-filter active" data-filter="all">All Work <span class="n">12</span></button>
+        <button class="pf-filter" data-filter="cad">3D CAD Modeling <span class="n">04</span></button>
+        <button class="pf-filter" data-filter="sheet-metal">Sheet Metal Design <span class="n">04</span></button>
+        <button class="pf-filter" data-filter="assemblies">Mechanical Assemblies &amp; Drawings <span class="n">04</span></button>
+      </div>
+
+      <div class="pf-grid" id="pfGrid">
+
+        <!-- ============ 3D CAD MODELING ============ -->
+
+        <!-- Project 01 -->
+        <div class="pf-card"
+             data-category="cad" data-category-label="3D CAD Modeling"
+             data-title="Industrial Machine Component"
+             data-full="Detailed SolidWorks 3D model developed from engineering dimensions with focus on accurate geometry and manufacturability. Surface continuity, fillets, and functional tolerances were verified before the model was released for downstream drawing work."
+             data-software="SolidWorks" data-type="3D Part Modeling" data-output="3D Model + Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">3D CAD Modeling</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <path d="M60 130 L60 70 L100 50 L140 70 L140 130 L100 150 Z" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <path d="M60 70 L100 90 L140 70 M100 90 L100 150" stroke-dasharray="3 3"/>
+              <circle cx="100" cy="100" r="14" stroke="#ff7a29"/>
+              <path d="M100 86 L100 74 M100 126 L100 114" stroke="#ff7a29"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Industrial Machine Component</h3>
+            <p>Detailed SolidWorks 3D model developed from engineering dimensions with focus on accurate geometry and manufacturability.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="pf-card"
+             data-category="cad" data-category-label="3D CAD Modeling"
+             data-title="Custom Mechanical Housing"
+             data-full="Designed a complete mechanical housing with mounting features and internal component clearance. The model accounts for wall thickness, rib placement, and assembly access for the internal components it protects."
+             data-software="SolidWorks" data-type="3D Part Modeling" data-output="3D Model + Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">3D CAD Modeling</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <rect x="55" y="55" width="90" height="70" rx="4" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <path d="M55 70 L145 70" stroke-dasharray="3 3"/>
+              <circle cx="70" cy="95" r="5" stroke="#ff7a29"/>
+              <circle cx="130" cy="95" r="5" stroke="#ff7a29"/>
+              <rect x="85" y="85" width="30" height="20" stroke="#ff7a29"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Custom Mechanical Housing</h3>
+            <p>Designed a complete mechanical housing with mounting features and internal component clearance.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="pf-card"
+             data-category="cad" data-category-label="3D CAD Modeling"
+             data-title="Precision Shaft Component"
+             data-full="Created a detailed mechanical shaft model with accurately defined dimensions and functional features, including keyway, shoulders, and fillet radii sized for fatigue performance."
+             data-software="SolidWorks" data-type="3D Part Modeling" data-output="3D Model + Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">3D CAD Modeling</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <rect x="40" y="78" width="120" height="16" rx="3" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <rect x="55" y="72" width="18" height="28" stroke="#ff7a29"/>
+              <rect x="128" y="72" width="18" height="28" stroke="#ff7a29"/>
+              <rect x="90" y="82" width="14" height="8" stroke="#ff7a29"/>
+              <path d="M40 86 L30 86 M160 86 L170 86" stroke-dasharray="2 2"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Precision Shaft Component</h3>
+            <p>Created a detailed mechanical shaft model with accurately defined dimensions and functional features.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 04 -->
+        <div class="pf-card"
+             data-category="cad" data-category-label="3D CAD Modeling"
+             data-title="Mechanical Product Concept"
+             data-full="Developed a complete 3D CAD concept from an initial design idea into a functional mechanical model, iterating on form and fit before locking geometry for detailed engineering."
+             data-software="SolidWorks" data-type="Concept Modeling" data-output="3D Model + Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">3D CAD Modeling</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <path d="M50 110 L50 70 L100 45 L150 70 L150 110 L100 135 Z" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <path d="M50 70 L100 95 L150 70 M100 95 L100 135" stroke-dasharray="3 3"/>
+              <circle cx="100" cy="80" r="9" stroke="#ff7a29"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Mechanical Product Concept</h3>
+            <p>Developed a complete 3D CAD concept from an initial design idea into a functional mechanical model.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- ============ SHEET METAL DESIGN ============ -->
+
+        <!-- Project 05 -->
+        <div class="pf-card"
+             data-category="sheet-metal" data-category-label="Sheet Metal Design"
+             data-title="Sheet Metal Electrical Enclosure"
+             data-full="Designed a complete sheet metal electrical enclosure using SolidWorks. The model includes accurately defined sheet thickness, bends, mounting holes, flange features, and a manufacturing-ready flat pattern. The design was developed with practical fabrication requirements in mind."
+             data-software="SolidWorks" data-type="Sheet Metal" data-output="3D Model + Flat Pattern + Engineering Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Sheet Metal Design</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <path d="M45 130 L45 65 L80 48 L155 48 L155 115 L120 130 Z" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <path d="M45 65 L120 65 L155 48" stroke-dasharray="3 3"/>
+              <path d="M120 65 L120 130" stroke-dasharray="3 3"/>
+              <rect x="58" y="82" width="20" height="14" stroke="#ff7a29"/>
+              <rect x="90" y="82" width="20" height="14" stroke="#ff7a29"/>
+              <circle cx="138" cy="88" r="6" stroke="#ff7a29"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Sheet Metal Electrical Enclosure</h3>
+            <p>Designed a fabricated sheet metal enclosure including bends, mounting holes, flanges, and flat pattern development.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 06 -->
+        <div class="pf-card"
+             data-category="sheet-metal" data-category-label="Sheet Metal Design"
+             data-title="Industrial Mounting Bracket"
+             data-full="Developed a practical sheet metal mounting bracket with accurate bends and manufacturing-friendly geometry, including relief cuts sized to the material's minimum bend radius."
+             data-software="SolidWorks" data-type="Sheet Metal" data-output="3D Model + Flat Pattern + Engineering Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Sheet Metal Design</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <path d="M50 125 L50 75 L85 75 L85 50 L150 50 L150 85 L115 85 L115 125 Z" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <circle cx="67" cy="100" r="6" stroke="#ff7a29"/>
+              <circle cx="132" cy="67" r="6" stroke="#ff7a29"/>
+              <path d="M85 75 L115 85" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Industrial Mounting Bracket</h3>
+            <p>Developed a practical sheet metal mounting bracket with accurate bends and manufacturing-friendly geometry.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 07 -->
+        <div class="pf-card"
+             data-category="sheet-metal" data-category-label="Sheet Metal Design"
+             data-title="Control Panel Housing"
+             data-full="Created a sheet metal control panel enclosure with mounting features and fabrication considerations, including cut-outs for switches, indicators, and a hinged access door."
+             data-software="SolidWorks" data-type="Sheet Metal" data-output="3D Model + Flat Pattern + Engineering Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Sheet Metal Design</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <rect x="50" y="50" width="100" height="72" rx="3" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <circle cx="72" cy="72" r="7" stroke="#ff7a29"/>
+              <rect x="95" y="65" width="34" height="10" stroke="#ff7a29"/>
+              <rect x="95" y="82" width="34" height="10" stroke="#ff7a29"/>
+              <path d="M50 108 L150 108" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Control Panel Housing</h3>
+            <p>Created a sheet metal control panel enclosure with mounting features and fabrication considerations.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 08 -->
+        <div class="pf-card"
+             data-category="sheet-metal" data-category-label="Sheet Metal Design"
+             data-title="Fabrication Panel Assembly"
+             data-full="Designed interconnected sheet metal panels with accurate dimensions and assembly features, including tab-and-slot alignment for repeatable fabrication and assembly."
+             data-software="SolidWorks" data-type="Sheet Metal" data-output="3D Model + Flat Pattern + Engineering Drawing">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Sheet Metal Design</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <rect x="45" y="55" width="55" height="65" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <rect x="105" y="55" width="55" height="65" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <path d="M100 75 L105 75 M100 90 L105 90 M100 105 L105 105" stroke="#ff7a29"/>
+              <circle cx="63" cy="72" r="4" stroke="#ff7a29"/>
+              <circle cx="140" cy="72" r="4" stroke="#ff7a29"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Fabrication Panel Assembly</h3>
+            <p>Designed interconnected sheet metal panels with accurate dimensions and assembly features.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- ============ MECHANICAL ASSEMBLIES & DRAWINGS ============ -->
+
+        <!-- Project 09 -->
+        <div class="pf-card"
+             data-category="assemblies" data-category-label="Mechanical Assemblies &amp; Drawings"
+             data-title="Mechanical Gear Assembly"
+             data-full="Created a multi-component SolidWorks assembly with properly defined mates and component relationships, verified for interference and correct gear mesh through motion study."
+             data-software="SolidWorks" data-type="Assembly" data-output="Assembly Model + Drawing Package">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Assemblies &amp; Drawings</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <circle cx="80" cy="90" r="30" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <circle cx="80" cy="90" r="10" stroke="#ff7a29"/>
+              <circle cx="132" cy="70" r="18" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <circle cx="132" cy="70" r="6" stroke="#ff7a29"/>
+              <path d="M80 60 L80 50 M80 120 L80 130 M50 90 L40 90 M110 90 L120 90" stroke-dasharray="2 2"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Mechanical Gear Assembly</h3>
+            <p>Created a multi-component SolidWorks assembly with properly defined mates and component relationships.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="pf-card"
+             data-category="assemblies" data-category-label="Mechanical Assemblies &amp; Drawings"
+             data-title="Machine Assembly"
+             data-full="Developed a complete mechanical assembly consisting of multiple components designed for functional integration, with a structured sub-assembly hierarchy for maintainability."
+             data-software="SolidWorks" data-type="Assembly" data-output="Assembly Model + Drawing Package">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Assemblies &amp; Drawings</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <rect x="45" y="90" width="45" height="35" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <rect x="100" y="70" width="55" height="55" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <circle cx="127" cy="97" r="14" stroke="#ff7a29"/>
+              <path d="M90 107 L100 97" stroke-dasharray="2 2"/>
+              <circle cx="67" cy="107" r="6" stroke="#ff7a29"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Machine Assembly</h3>
+            <p>Developed a complete mechanical assembly consisting of multiple components designed for functional integration.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 11 -->
+        <div class="pf-card"
+             data-category="assemblies" data-category-label="Mechanical Assemblies &amp; Drawings"
+             data-title="Manufacturing Drawing Package"
+             data-full="Prepared detailed engineering drawings with dimensions, annotations, section views, and manufacturing information, formatted to a consistent drawing standard across the full part set."
+             data-software="SolidWorks" data-type="Engineering Drawing" data-output="Multi-Sheet Drawing Package">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Assemblies &amp; Drawings</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <rect x="48" y="45" width="104" height="80" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <path d="M48 100 L152 100 M100 45 L100 100" stroke-dasharray="2 2"/>
+              <path d="M60 112 L90 112 M60 118 L80 118" stroke="#ff7a29"/>
+              <path d="M60 62 L60 82 M56 62 L64 62 M56 82 L64 82" stroke="#ff7a29"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Manufacturing Drawing Package</h3>
+            <p>Prepared detailed engineering drawings with dimensions, annotations, section views, and manufacturing information.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+        <!-- Project 12 -->
+        <div class="pf-card"
+             data-category="assemblies" data-category-label="Mechanical Assemblies &amp; Drawings"
+             data-title="Fabrication-Ready Mechanical Design"
+             data-full="Developed a complete mechanical design package including 3D models, assembly structure, and technical drawings, delivered as a single fabrication-ready release."
+             data-software="SolidWorks" data-type="Full Design Package" data-output="3D Models + Assembly + Drawing Package">
+          <div class="pf-thumb">
+            <span class="pf-cat-chip">Assemblies &amp; Drawings</span>
+            <svg viewBox="0 0 200 170" fill="none" stroke="#3ea8ff" stroke-width="1.3">
+              <path d="M45 110 L45 65 L75 50 L130 50 L130 95 L100 110 Z" stroke="#eef1f4" stroke-opacity="0.85"/>
+              <rect x="105" y="110" width="50" height="34" stroke="#ff7a29"/>
+              <path d="M112 118 L148 118 M112 126 L140 126 M112 134 L145 134" stroke="#ff7a29" stroke-width="0.9"/>
+            </svg>
+          </div>
+          <div class="pf-body">
+            <h3>Fabrication-Ready Mechanical Design</h3>
+            <p>Developed a complete mechanical design package including 3D models, assembly structure, and technical drawings.</p>
+            <span class="pf-more">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA (matches Home Page) ============ -->
+  <section class="section cta-final" id="contact">
+    <div class="container">
+      <div class="cta-final-inner reveal in">
+        <span class="eyebrow orange">Let's Build Something</span>
+        <h2>Have a Mechanical Design in Mind?</h2>
+        <p>Let's turn your idea, sketch, or concept into a professional 3D CAD design.</p>
+        <div class="btn-row">
+          <a href="mailto:hello@anas-design.com" class="btn btn-primary">Start a Project</a>
+          <a href="services.html" class="btn btn-ghost">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="lightbox-panel">
+    <div class="lb-media">
+      <div class="lb-media-inner"></div>
+      <button class="lb-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <button class="lb-nav lb-prev" aria-label="Previous project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="lb-nav lb-next" aria-label="Next project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+    <div class="lb-content">
+      <span class="lb-cat mono"></span>
+      <h3 class="lb-title"></h3>
+      <p class="lb-desc"></p>
+      <div class="lb-meta">
+        <div class="m"><div class="k mono">Software</div><div class="v" data-meta="software"></div></div>
+        <div class="m"><div class="k mono">Design Type</div><div class="v" data-meta="type"></div></div>
+        <div class="m"><div class="k mono">Output</div><div class="v" data-meta="output"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="mark">AS</span>
+          <span class="full">ANAS<em>MECHANICAL DESIGN</em></span>
+        </a>
+        <p>Mechanical designer specializing in SolidWorks, sheet metal design, 3D modeling, assemblies, and engineering drawings.</p>
+        <div class="footer-social">
+          <a href="mailto:hello@anas-design.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7 L12 13 L21 7"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20 L5.5 15.5 A8 8 0 1 1 8.5 18.5 Z"/><path d="M9 9.5 C9 12 12 15 14.5 15 C15.5 15 16 13.8 15.6 13.4 C15 12.8 13.8 12.2 13.3 12.6 C13.1 12.8 13 13 12.8 13 C12.3 13 11 12 10 10.5 C10 10.3 10.2 10.2 10.4 10 C10.8 9.5 10.2 8.3 9.6 7.7 C9.2 7.3 9 8 9 9.5Z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10 V17 M7 7 V7.01 M12 17 V13 C12 11 15 11 15 13 V17"/></svg></a>
+          <a href="#" aria-label="Upwork"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M8 9 V13 C8 15 10 16 11.5 15" /><path d="M15 9 L13 13.5" /></svg></a>
+          <a href="#" aria-label="Fiverr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9 15 V10 C9 8.5 10.5 8 12 8 M9 12 H13" /></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#svc-modeling">SolidWorks 3D Modeling</a></li>
+          <li><a href="services.html#svc-sheetmetal">Sheet Metal Design</a></li>
+          <li><a href="services.html#svc-assembly">Mechanical Assemblies</a></li>
+          <li><a href="services.html#svc-drawings">Engineering Drawings</a></li>
+          <li><a href="services.html#svc-product">Product Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7 L12 13 L21 7"/></svg> hello@anas-design.com</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20 L5.5 15.5 A8 8 0 1 1 8.5 18.5 Z"/></svg> WhatsApp — add number</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> LinkedIn — add link</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/></svg> Upwork · Fiverr — add link</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Anas. All Rights Reserved.</span>
+      <span class="made mono">BUILT LIKE A DRAWING SHEET — REV A</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
